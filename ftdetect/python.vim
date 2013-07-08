@@ -1,4 +1,4 @@
-augroup python_files
+augroup ftdetect_python
     au!
 
     " This function detects, based on Python content, whether this is a

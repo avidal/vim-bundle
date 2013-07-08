@@ -1,4 +1,4 @@
-augroup html_files
+augroup ftdetect_html
     au!
 
     " This function detects, based on HTML content, whether this is a

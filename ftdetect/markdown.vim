@@ -1,4 +1,4 @@
-augroup markdown_files
+augroup ftdetect_markdown
     au!
 
     "override .md for markdown instead of modula2
