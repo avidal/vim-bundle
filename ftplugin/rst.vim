@@ -1,9 +1,9 @@
-augroup rst_files
-    au!
+if exists("b:loaded_rst_ftplugin")
+    finish
+endif
+let b:loaded_rst_ftplugin = 1
 
-    " Auto-wrap text around 74 chars
-    autocmd filetype rst setlocal textwidth=74
-    autocmd filetype rst setlocal formatoptions+=nqt
-    autocmd filetype rst match ErrorMsg '\%>74v.\+'
-
-augroup end
+" Auto-wrap text around 74 chars
+setlocal textwidth=74
+setlocal formatoptions+=nqt
+match ErrorMsg '\%>74v.\+'

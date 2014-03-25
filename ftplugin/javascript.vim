@@ -1,8 +1,7 @@
-augroup javascript_files
-    au!
+if exists("b:loaded_js_ftplugin")
+    finish
+endif
+let b:loaded_js_ftplugin = 1
 
-    autocmd filetype javascript setlocal expandtab
-    autocmd filetype javascript setlocal foldmethod=marker foldmarker={,}
-    autocmd filetype javascript setlocal ts=2 sts=2 sw=2
-
-augroup end
+setlocal expandtab ts=2 sts=2 sw=2
+setlocal foldmethod=marker foldmarker={,}

@@ -1,7 +1,7 @@
-augroup less_files
-    au!
+if exists("b:loaded_less_ftplugin")
+    finish
+endif
+let b:loaded_less_ftplugin = 1
 
-    autocmd filetype less setlocal foldmethod=marker foldmarker={,}
-    autocmd filetype less setlocal ts=2 sts=2 sw=2
-
-augroup end
+setlocal foldmethod=marker foldmarker={,}
+setlocal ts=2 sts=2 sw=2
